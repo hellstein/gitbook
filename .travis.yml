@@ -12,9 +12,9 @@ services:
   - docker
 branches:
   only:
-  - master
-  - develop
-  - /^\d+\.\d+(\.\d+)?(-\S*)?$/
+    - master
+    - develop
+    - /^\d+\.\d+(\.\d+)?(-\S*)?$/
 before_install:
   - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 install: true
@@ -31,4 +31,3 @@ deploy:
     on:
       tags: true
       all_branches: true
-
