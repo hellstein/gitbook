@@ -1,33 +1,33 @@
-language: generic 
+language: generic
 sudo: required
 dist: trusty
 env:
   matrix:
-    - ARCH=armv6
-    - ARCH=x86
+  - ARCH=armv6
+  - ARCH=x86
   global:
-    - secure: LI5Iz93GNoJ7q8f5NLMnAW5QbbDyJNAsF8hAVCQXW9VsXjScOBrd1uYbFqBOJIeiAK4lC9IRSfWTzeGVRzsG1ZaCB+K3ihBoiOsX/Zw7S++a7GmNYmoOwPGsoirIB+nFyfDCyxbmQYl5QCzOeY2FF/r1jwHZ1gdY/bv59C/Ty50B7rzJegkMASzYvVZy2SrERP7dPQ2TlbxVhp7YFQgNmSTDt0x8B2xmMWDG1sCMqVLUyErsjbBBnNCVYs34KHjvt1INo4tTMDUbfY1Sysw42lxypt8BYIS6UVXIPGybXg97WO/Va3Wq+u74xlVqZQX+ycrQDHfK+TwAc1QG4981YpAfJ7EU+MLaSTu/lhkjtCcidBydtWaA/pg14NOZZbGi+0EosKu0DlKMfiwe1vmOkHYlqvds5BQo+dIE7Zzy8/6oU4RUir7owZnzc8uWnpSegoYRQSz2blYRxiYN90wlLCiZpC7Ko/M7FbCXHhpvup9CqZ7IVUzbPaz5tonUrB8VBptT3Sl6Za4aHH48GOoyl5e0inI4ZtWCmfw5Tmt9rz6KD/nzy4RvRkBHXtYXf3PT+SeXQMxYChclityv/C7KaVV5eq3ADVzXUlxFIiPB6ItZeBGzNFBuBH4qulCk2+wVCyGpTBXAQJmTQSy2ai1d5QOHKpyxYKSVr6UlstM1JPM=
-    - secure: FKlMsrIAm7qqEvpNDWRW334m/NcfvjN1TUHIonRfxsCADCd1YVsKisrEAlecguW9NAgVVhHkBRhi7nzl2KVOMIa7o4P26G/+RD7uaQrxMn0I7P7U6gxQXPNfrwgnOyOtOEVc8VQe2LQDdXWDNRs+zgAse1zdTOwuBoap/DHcG+Tf8CF5geDiPZEvU7SfYynBG/C5fUtmbHQv0oFyfFUF0GOGftN9EgztrKaNp0BA8Cq1IwhxRDIXlOISG1NgPTWzQ/Bc3z9B1VvwCtJqOUZpCZqTsRA67vLTRZYvoSLuMjhkNNP0m87AqYAE831M5pYdodjuZGaYyHrCPxu97u3LvjuCFZSU+c+YXF1ffJzWT/E2MYnT2iwtwlgUp7f+FV2+WAuHiyuGhL65e5KHebaqViQ7gGjrqYl8HNF2A/ExfKMeasbSjsPPCdQpOhyKR+asPUJClixP2W2dNJhsuWvApTcEeEOBSH6aMLmRDavpPRYsRJh+1bpoena5zGLkVLk9EWv1lph2Hl7ZjnO09X6P2GRckXGW9SevzhIKwVmz9Bzq8hn/Wa//TWLEHIsj1Nl4GugO2uk+NY/eFAGvR+vtk4koSADmaJM1UvYp4DBqIZk0R91RLS5OM6RyUDKPcHa2s/61oW4UJXzT5uZODFunzcmI5GsglHUN7WVxnkcyTMQ=
+  - secure: fbLqvHTki6IJCnqwaXMmKX+9EZak0U2VvwNwiTHptQXQZm5dhUF13VQIrgekCjjrNnaOiQdTRYdTyH+p85xRq8hKsvCDVw6V1VgN+3nCRFk+zkGKjqGQ7qIHSrbbJKzl1EAJzb4i5gjtmSoRokFaHnbxMEQ9iyaqLkRA/30yiRfTAnMYqFnbyW9Wl5sfgOcGyiLEXW3VXVMAyOy4n4zfeY4zXq7FD/nRK968sdv/q2yWIPShKAPeAd6ol3+co+8GXBvw2XjodcPmvlw8hmtI/GaQfxr+c+sfwFAaD3e7LN3GCUYW/IV/l83u9eOj7GJ+lOqFdnMRXuRb3xPPlHnhPC/MEbEkARyXieORt5wqNaPK46zRGxSO7N9phS/SZmJLt6YdZEq+A/BjDrgocdERngPAGPEmhhEARHmqQsCim7nAhT6RktzwIjA4Jpbg2DvjmfR17hJ6jUk6MrXsxL7hMnKlDK5ACHBTNka/hrZL7+qVbRNUrPUq5t/fxLRFI5rLQb28W5YQ4rkGMSwWx9WDf7qjtXVH+tv/V4P9CVJIKuMPc5dEkS4FBhYvPkSMY6Oz5K0PZ7eiUO5hGrV0FixbS6dmr/5T+mUeHCUTVJvXc973MghpoWyBM71blkuCS333bvbs7o2R0GjeWkEusKvlb4tu8HgZlKNhXqKq5wJxwfU=
+  - secure: V7oFMoWSeKvIzAr/rTldjztwXuKEGVaCD4u+UwFjYW8VkHfb15o2DeO9cPE3IX79mGZPxs0vpRVdyc8idfJ6GBKSTriQrsGqvhhA+/dtplM8Xob6Mkk4Dd/xS88m+iaVqf0bDYjMI5Ghbqwqax5MUmMqcO//f67vgZvv0o5WDDRAOcym5sszpxZX4SwF49tVIlqWW71HPjunmDNIRpfbhWJuWrA6LJTFLv69j7FGCkY0fkcYsglVV+Gyyr7J+vK9gDHLSo8xXkEEqwlNFwAVVZV/jf+BUp16KVS0YJFLpgJxYX4J7PHKSNXroph+Q2A7CHas4/b+4wewSrXw2KbzxUFiDqmzn0t1xdj7qqwphNkoB6lpZEGuMtrPJ6f7MIFVlzIyxT3Ba2+ejC8PcunKOagX2jkW4DfXGOec6pUqor4xecr+pCyZ5chLjGwqZric2b6D5QehUlFzS2kB/ibv426IHWzWwKzoJCkpbF8SujObDN1Hgqs/Q9iA+CnrG1fd8fu+FXTyHlj4hYEx8abQZTX5tu6GLOwTZZGhIHQYemjvuJ26I3CMSSG6bkNNK9O3hy98hj2wDCdbvpQPd0XnMQsYSPg+TtfWGnfblFAzAk7g++tS3AptaH+tuGcIH7d56X+ob5H4Ud/UPisHKbUKL/zhHPjiDudMlteeiF3g3Zs=
 services:
-  - docker
+- docker
 branches:
   only:
-    - master
-    - develop
-    - /^\d+\.\d+(\.\d+)?(-\S*)?$/
+  - master
+  - develop
+  - "/^\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
 before_install:
-  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+- docker run --rm --privileged multiarch/qemu-user-static:register --reset
 install: true
 script:
-  - "./build $ARCH"
+- "./build $ARCH"
 deploy:
-  - provider: script
-    script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_BRANCH
-    on:
-      all_branches: true
-      condition: "$TRAVIS_BRANCH =~ ^master|develop$"
-  - provider: script
-    script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_TAG
-    on:
-      tags: true
-      all_branches: true
+- provider: script
+  script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_BRANCH
+  on:
+    all_branches: true
+    condition: "$TRAVIS_BRANCH =~ ^master|develop$"
+- provider: script
+  script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_TAG
+  on:
+    tags: true
+    all_branches: true
