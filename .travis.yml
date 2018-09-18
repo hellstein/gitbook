@@ -1,0 +1,34 @@
+language: generic 
+sudo: required
+dist: trusty
+env:
+  matrix:
+    - ARCH=armv6
+    - ARCH=x86
+  global:
+    - secure: LI5Iz93GNoJ7q8f5NLMnAW5QbbDyJNAsF8hAVCQXW9VsXjScOBrd1uYbFqBOJIeiAK4lC9IRSfWTzeGVRzsG1ZaCB+K3ihBoiOsX/Zw7S++a7GmNYmoOwPGsoirIB+nFyfDCyxbmQYl5QCzOeY2FF/r1jwHZ1gdY/bv59C/Ty50B7rzJegkMASzYvVZy2SrERP7dPQ2TlbxVhp7YFQgNmSTDt0x8B2xmMWDG1sCMqVLUyErsjbBBnNCVYs34KHjvt1INo4tTMDUbfY1Sysw42lxypt8BYIS6UVXIPGybXg97WO/Va3Wq+u74xlVqZQX+ycrQDHfK+TwAc1QG4981YpAfJ7EU+MLaSTu/lhkjtCcidBydtWaA/pg14NOZZbGi+0EosKu0DlKMfiwe1vmOkHYlqvds5BQo+dIE7Zzy8/6oU4RUir7owZnzc8uWnpSegoYRQSz2blYRxiYN90wlLCiZpC7Ko/M7FbCXHhpvup9CqZ7IVUzbPaz5tonUrB8VBptT3Sl6Za4aHH48GOoyl5e0inI4ZtWCmfw5Tmt9rz6KD/nzy4RvRkBHXtYXf3PT+SeXQMxYChclityv/C7KaVV5eq3ADVzXUlxFIiPB6ItZeBGzNFBuBH4qulCk2+wVCyGpTBXAQJmTQSy2ai1d5QOHKpyxYKSVr6UlstM1JPM=
+    - secure: FKlMsrIAm7qqEvpNDWRW334m/NcfvjN1TUHIonRfxsCADCd1YVsKisrEAlecguW9NAgVVhHkBRhi7nzl2KVOMIa7o4P26G/+RD7uaQrxMn0I7P7U6gxQXPNfrwgnOyOtOEVc8VQe2LQDdXWDNRs+zgAse1zdTOwuBoap/DHcG+Tf8CF5geDiPZEvU7SfYynBG/C5fUtmbHQv0oFyfFUF0GOGftN9EgztrKaNp0BA8Cq1IwhxRDIXlOISG1NgPTWzQ/Bc3z9B1VvwCtJqOUZpCZqTsRA67vLTRZYvoSLuMjhkNNP0m87AqYAE831M5pYdodjuZGaYyHrCPxu97u3LvjuCFZSU+c+YXF1ffJzWT/E2MYnT2iwtwlgUp7f+FV2+WAuHiyuGhL65e5KHebaqViQ7gGjrqYl8HNF2A/ExfKMeasbSjsPPCdQpOhyKR+asPUJClixP2W2dNJhsuWvApTcEeEOBSH6aMLmRDavpPRYsRJh+1bpoena5zGLkVLk9EWv1lph2Hl7ZjnO09X6P2GRckXGW9SevzhIKwVmz9Bzq8hn/Wa//TWLEHIsj1Nl4GugO2uk+NY/eFAGvR+vtk4koSADmaJM1UvYp4DBqIZk0R91RLS5OM6RyUDKPcHa2s/61oW4UJXzT5uZODFunzcmI5GsglHUN7WVxnkcyTMQ=
+services:
+  - docker
+branches:
+  only:
+  - master
+  - develop
+  - /^\d+\.\d+(\.\d+)?(-\S*)?$/
+before_install:
+  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
+install: true
+script:
+  - "./build $ARCH"
+deploy:
+  - provider: script
+    script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_BRANCH
+    on:
+      all_branches: true
+      condition: "$TRAVIS_BRANCH =~ ^master|develop$"
+  - provider: script
+    script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_TAG
+    on:
+      tags: true
+      all_branches: true
+
