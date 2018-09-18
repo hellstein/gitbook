@@ -1,0 +1,10 @@
+#! /bin/bash 
+
+BOOKDIR=/book
+
+adduser -H -D -u $BOOKUSER gitbook
+chown -R $BOOKUSER:$BOOKUSER $BOOKDIR
+chmod -R +w $BOOKDIR
+gitbook install $BOOKDIR
+gitbook serve $BOOKDIR result 
+
