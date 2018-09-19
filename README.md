@@ -18,49 +18,68 @@
 `   x86:    `
 [![Docker Pulls](https://img.shields.io/docker/pulls/chineseteapot/gitbook-x86.svg)](https://hub.docker.com/r/chineseteapot/gitbook-x86/tags/)
 
-# Deployment
+# Deployment ( for end user)
 
-As a user, how to deploy the project
+### Through script
 
-# Getting Started
+* Fetch the code
+  ```
+  git clone https://github.com/chineseteapot/gitbook.git
+  ```
+  
+* Run gitbook
+  ```
+  ./ctl start <arch>
+  ```
+  We support `x86` only currently.
+
+* Check the status
+  ```
+  ./ctl status
+  ```
+
+* Stop gitbook service
+  ```
+  ./ctl stop <arch>
+  ```
+
+
+### Through docker cli
+
+* Start gitbook
+  ```
+  mkdir matchbox
+  touch matchbox/README.md
+  docker run -itd --restart=always -p 4000:4000 -v `pwd`/matchbox:/book:rw -e BOOKUSER=`id -u` --name gitbook-x86 chineseteapot/gitbook:develop
+  ``` 
+
+* Stop gitbook
+  ```
+  docker rm -f gitbook-x86
+  ```
+
+# Getting Started ( for developer )
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+* Docker
+* Travis client
+
+### Local Build
 
 ```
-Give examples
+git clone https://github.com/chineseteapot/gitbook.git
+cd gitbook
+./build <arch>
 ```
 
-### Installing
+### Built With Travis CI
 
-How to install package
+* `.travis.yml` for build configuration
+* `set_docker_account` and `.env` is for create docker credential
 
-
-### Running the tests
-
-Explain how to run the automated tests for this system
-
-```
-Give an example
-```
-### Documentation
-Document list of the project
-
-* user manual
-* API 
-* Requirement design
-
-
-### Build
-
-How to build
-
-### Built With
-
-Tools you used for building this project
 
 # Logistics
 
