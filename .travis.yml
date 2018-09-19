@@ -3,7 +3,6 @@ sudo: required
 dist: trusty
 env:
   matrix:
-  - ARCH=armv6
   - ARCH=x86
   global:
   - secure: fbLqvHTki6IJCnqwaXMmKX+9EZak0U2VvwNwiTHptQXQZm5dhUF13VQIrgekCjjrNnaOiQdTRYdTyH+p85xRq8hKsvCDVw6V1VgN+3nCRFk+zkGKjqGQ7qIHSrbbJKzl1EAJzb4i5gjtmSoRokFaHnbxMEQ9iyaqLkRA/30yiRfTAnMYqFnbyW9Wl5sfgOcGyiLEXW3VXVMAyOy4n4zfeY4zXq7FD/nRK968sdv/q2yWIPShKAPeAd6ol3+co+8GXBvw2XjodcPmvlw8hmtI/GaQfxr+c+sfwFAaD3e7LN3GCUYW/IV/l83u9eOj7GJ+lOqFdnMRXuRb3xPPlHnhPC/MEbEkARyXieORt5wqNaPK46zRGxSO7N9phS/SZmJLt6YdZEq+A/BjDrgocdERngPAGPEmhhEARHmqQsCim7nAhT6RktzwIjA4Jpbg2DvjmfR17hJ6jUk6MrXsxL7hMnKlDK5ACHBTNka/hrZL7+qVbRNUrPUq5t/fxLRFI5rLQb28W5YQ4rkGMSwWx9WDf7qjtXVH+tv/V4P9CVJIKuMPc5dEkS4FBhYvPkSMY6Oz5K0PZ7eiUO5hGrV0FixbS6dmr/5T+mUeHCUTVJvXc973MghpoWyBM71blkuCS333bvbs7o2R0GjeWkEusKvlb4tu8HgZlKNhXqKq5wJxwfU=
