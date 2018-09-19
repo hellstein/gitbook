@@ -2,7 +2,7 @@
 
 filename="$0"
 image="chineseteapot/gitbook-$2"
-version="latest"
+version="develop"
 vol=`pwd`/matchbox
 container="gitbook-$2"
 
