@@ -7,3 +7,4 @@ RUN apk update && \
 
 COPY init ./
 CMD ./init
+

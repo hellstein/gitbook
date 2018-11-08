@@ -1,0 +1,10 @@
+FROM elespejo/armv6-x86-alpine-base 
+
+RUN apk update && \
+  apk upgrade && \
+  apk add --no-cache bash vim npm && \
+  npm install gitbook-cli -g
+
+COPY init ./
+CMD ./init
+

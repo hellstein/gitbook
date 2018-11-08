@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  gitbook:
+    image: ${OWNER}/${REPO}-${ARCH}:${VERSION}
+    restart: always
+    ports: 
+      - "${PORT}:4000"
+    volumes:
+      - type: bind
+        source: ${SOURCE}
+        target: "/book" 
+    environment:
+      - BOOKUSER=${BOOKUSER}

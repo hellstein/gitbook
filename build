@@ -1,2 +1,0 @@
-#! /bin/bash
-docker build -t chineseteapot/gitbook-$1 -f Dockerfile-$1 . 

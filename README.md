@@ -1,92 +1,30 @@
 <p align="center">
-  <img width="500" src="https://www.gitbook.com/public/images/f5fde7c87273057f8e0f9ff934df552d.png">
+  <img width="250" src="LOGO">
 </p>
 
-<h1 align="center"> Gitbook </h1>
+<h1 align="center"> Project Title </h1>
 <p align="center">
-  <b >docker image of gitbook</b>
+  <b >One Paragraph of project description goes here</b>
 </p>
 <br>
 
+[![GitHub release](https://img.shields.io/github/release/ChineseTeapot/gitbook.svg)](https://github.com/ChineseTeapot/gitbook/releases)
+![Github All Releases](https://img.shields.io/github/downloads/ChineseTeapot/gitbook/total.svg)
+x86: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitbook-x86.svg)](https://hub.docker.com/r/ChineseTeapot/gitbook-x86/tags/)
+armv6: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitbook-x86.svg)](https://hub.docker.com/r/ChineseTeapot/gitbook-armv6/tags/)
 
-![Travis (.org) branch](https://img.shields.io/travis/ChineseTeapot/gitbook/master.svg)
+![Travis (.org) branch](https://img.shields.io/travis/ChineseTeapot/gitbook/BRANCH.svg)
 ![GitHub](https://img.shields.io/github/license/ChineseTeapot/gitbook.svg)
 
-`   armv6:   `
-[![Docker Pulls](https://img.shields.io/docker/pulls/chineseteapot/gitbook-armv6.svg)](https://hub.docker.com/r/chineseteapot/gitbook-armv6/tags/)
-
-`   x86:    `
-[![Docker Pulls](https://img.shields.io/docker/pulls/chineseteapot/gitbook-x86.svg)](https://hub.docker.com/r/chineseteapot/gitbook-x86/tags/)
-
-# Deployment ( for end user)
-
-### Through script
-
-* Fetch the code
-  ```
-  git clone https://github.com/chineseteapot/gitbook.git
-  ```
-  
-* Run gitbook
-  ```
-  ./ctl start <arch>
-  ```
-  We support `x86` only currently.
-
-* Check the status
-  ```
-  ./ctl status
-  ```
-
-* Stop gitbook service
-  ```
-  ./ctl stop <arch>
-  ```
-
-
-### Through docker cli
-
-* Start gitbook
-  ```
-  mkdir matchbox
-  touch matchbox/README.md
-  docker run -itd --restart=always -p 4000:4000 -v `pwd`/matchbox:/book:rw -e BOOKUSER=`id -u` --name gitbook-x86 chineseteapot/gitbook:develop
-  ``` 
-
-* Stop gitbook
-  ```
-  docker rm -f gitbook-x86
-  ```
-
-# Getting Started ( for developer )
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
-
-### Prerequisites
-
-* Docker
-* Travis client
-
-### Local Build
-
-```
-git clone https://github.com/chineseteapot/gitbook.git
-cd gitbook
-./build <arch>
-```
-
-### Built With Travis CI
-
-* `.travis.yml` for build configuration
-* `set_docker_account` and `.env` is for create docker credential
-
+# Manual
+More details got to the github page.
 
 # Logistics
 
 ### Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/ChineseTeapot/gitbook/blob/master/docs/CONTRIBUTING.md) for contributing.
-For details on our [code of conduct](https://github.com/ChineseTeapot/gitbook/blob/master/docs/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/ChineseTeapot/gitbook/blob/master/.github/CONTRIBUTING.md) for contributing.
+For details on our [code of conduct](https://github.com/ChineseTeapot/gitbook/blob/master/.github/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 ### Versioning
 
@@ -94,13 +32,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Authors
 
-* **dorrywhale** - *Initial work* - [dorrywhale](https://github.com/dorrywhale)
+* **AUTHOR** - *Initial work* - [AUTHOR](https://github.com/AUTHOR)
 
 See also the list of [contributors](https://github.com/ChineseTeapot/gitbook/graphs/contributors) who participated in this project.
 
 ### Acknowledgments
 
-See [Acknowledgments](https://github.com/ChineseTeapot/gitbook/blob/master/docs/ACKNOWLEDGMENTS.md)
+See [Acknowledgments](https://github.com/ChineseTeapot/gitbook/blob/master/.github/ACKNOWLEDGMENTS.md)
 
 
 ### License

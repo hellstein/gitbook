@@ -3,10 +3,11 @@ sudo: required
 dist: trusty
 env:
   matrix:
+  - ARCH=armv6
   - ARCH=x86
   global:
-  - secure: fbLqvHTki6IJCnqwaXMmKX+9EZak0U2VvwNwiTHptQXQZm5dhUF13VQIrgekCjjrNnaOiQdTRYdTyH+p85xRq8hKsvCDVw6V1VgN+3nCRFk+zkGKjqGQ7qIHSrbbJKzl1EAJzb4i5gjtmSoRokFaHnbxMEQ9iyaqLkRA/30yiRfTAnMYqFnbyW9Wl5sfgOcGyiLEXW3VXVMAyOy4n4zfeY4zXq7FD/nRK968sdv/q2yWIPShKAPeAd6ol3+co+8GXBvw2XjodcPmvlw8hmtI/GaQfxr+c+sfwFAaD3e7LN3GCUYW/IV/l83u9eOj7GJ+lOqFdnMRXuRb3xPPlHnhPC/MEbEkARyXieORt5wqNaPK46zRGxSO7N9phS/SZmJLt6YdZEq+A/BjDrgocdERngPAGPEmhhEARHmqQsCim7nAhT6RktzwIjA4Jpbg2DvjmfR17hJ6jUk6MrXsxL7hMnKlDK5ACHBTNka/hrZL7+qVbRNUrPUq5t/fxLRFI5rLQb28W5YQ4rkGMSwWx9WDf7qjtXVH+tv/V4P9CVJIKuMPc5dEkS4FBhYvPkSMY6Oz5K0PZ7eiUO5hGrV0FixbS6dmr/5T+mUeHCUTVJvXc973MghpoWyBM71blkuCS333bvbs7o2R0GjeWkEusKvlb4tu8HgZlKNhXqKq5wJxwfU=
-  - secure: V7oFMoWSeKvIzAr/rTldjztwXuKEGVaCD4u+UwFjYW8VkHfb15o2DeO9cPE3IX79mGZPxs0vpRVdyc8idfJ6GBKSTriQrsGqvhhA+/dtplM8Xob6Mkk4Dd/xS88m+iaVqf0bDYjMI5Ghbqwqax5MUmMqcO//f67vgZvv0o5WDDRAOcym5sszpxZX4SwF49tVIlqWW71HPjunmDNIRpfbhWJuWrA6LJTFLv69j7FGCkY0fkcYsglVV+Gyyr7J+vK9gDHLSo8xXkEEqwlNFwAVVZV/jf+BUp16KVS0YJFLpgJxYX4J7PHKSNXroph+Q2A7CHas4/b+4wewSrXw2KbzxUFiDqmzn0t1xdj7qqwphNkoB6lpZEGuMtrPJ6f7MIFVlzIyxT3Ba2+ejC8PcunKOagX2jkW4DfXGOec6pUqor4xecr+pCyZ5chLjGwqZric2b6D5QehUlFzS2kB/ibv426IHWzWwKzoJCkpbF8SujObDN1Hgqs/Q9iA+CnrG1fd8fu+FXTyHlj4hYEx8abQZTX5tu6GLOwTZZGhIHQYemjvuJ26I3CMSSG6bkNNK9O3hy98hj2wDCdbvpQPd0XnMQsYSPg+TtfWGnfblFAzAk7g++tS3AptaH+tuGcIH7d56X+ob5H4Ud/UPisHKbUKL/zhHPjiDudMlteeiF3g3Zs=
+  - secure: itoth+fc9yQjuuSugiYEo3cNM43jum+aYfbq5mmiA8osEMHQNhbphWAYX+R9DiG+QpVLhqMGyrLr7+houtjVgMvcG98c4g2AyNwnBeV+3zopFbs6Q/h0Q8VgACSo5qK2cs15zmHYrG4D4K7qLX5Q1aGd3yjnrhc3NJEWaTgqKsAziKQIcVvd6gKGFQXVMkq/v+pSfZ9rhElb6uSs3JgblyuLgIf8vV0RtlMtavUHEgIRVnuMrmlv5e720tbqeggQDSFhuhnfsrunVZOciwpSoM30L/WWhCs/6JyuFhxgcTCsZ7EJd1yKDLZhTSMNMD4rGG0mbBnU6sq4vTSVMaBxLKqyG3W+A4A+A/wlHJsaTOIK8USDIrm4L/HtzW+lqG5dwKlupIFZbJWNzIl+qhyTBTiUkzsbTY+4avsLVTTS7oi5ZAB98+x0xxru/Hh1MVv5TR4N/Y3FM+yw+ntloTVdbAXhofSOQFm1K2IXDw//DHqwooTCKqvGwzhwDeL3WNUvcJDhYzOBr2+OD+dLJWgzMBBRuRE3a9qdpRZ+2Wt7yrj8Kp3d8hL2fgtbmlZS9Hw6eKeQf7b3GFLhMO5m50v32m0EDVbDxzUV8bHSGA3FPbWztN1QuDlh+oJXmM4HBNVCEgzcORznq0DYWtHYdejb/VTmpDgXawQV3k5UAIxwmts=
+  - secure: CtD9rT4Gz1htcHWmeL71ymxG1tfx5UZPiFg9pYkaGfX3bIkCzUo3XfKGT51TlhLfwoz5po/LIzT0wIrptp2MAg5SJHwNSHwqKfEA90zygKXAUN4tM3RcierzbSBv9HncaJXNs2F5SZ537yGrc2dFeNOJ8YWrfkgxDssp03TfpD8VF6MDQkg+Ax94CO2AbTs5qRbgn29534jDMShaHMYZatL1fWJDcYYnMUMgWk6KulQBQlMGVPvTPTR/ZStzYivpA9FzPfYR0LljovTyw0XFI9pXawsCbDM4jl/1JqhDvem7B3fQzauC4Ki4OThpmaPmtQAxwKqAD9dGGlbGNtBt9PPBBOmIaFyhFv2UxyXYd5+g6Ky2fbgxh0oKmzgef8mlo1xv58vC+v6Rl8sB9XRhOxJyJtCJ/YYy4HhdRwa6mJDXN/8RnaaCgSiOfVs2RsUH8pW9Ym4vWtBcbFXKTqgKOUo5htLKDisMNK9mUhDVhlj4ifDbaVit3CBMJ69dUAnPB/AKftAiIbeRC8vpe7nhfMO6uvlrQq0JLzQFHDur7mz1JD3I/n1ZFbeRncFs4vNfbKZRSx8KglWnnk6gbxSGitLVF/rZ2uLsLkiMi8NT0Sr7ARoN4z3dgP3ihJQnPeWqRZMRaob3g+q9fj6KU+o0fk/BfQy65HAkoFLDwN5hapc=
 services:
 - docker
 branches:
@@ -14,19 +15,28 @@ branches:
   - master
   - develop
   - "/^\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
-before_install:
-- docker run --rm --privileged multiarch/qemu-user-static:register --reset
 install: true
 script:
-- "./build $ARCH"
+- make mk-image ARCH=$ARCH
+- make mk-deployment VERSION=$TRAVIS_TAG
 deploy:
 - provider: script
-  script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_BRANCH
+  script: make pushtohub USER=$DOCKER_USER PASS=$DOCKER_PASS ARCH=$ARCH TAG=$TRAVIS_BRANCH
   on:
     all_branches: true
     condition: "$TRAVIS_BRANCH =~ ^master|develop$"
 - provider: script
-  script: bash deploy.sh $DOCKER_USER $DOCKER_PASS $ARCH $TRAVIS_TAG
+  script: make pushtohub USER=$DOCKER_USER PASS=$DOCKER_PASS ARCH=$ARCH TAG=$TRAVIS_TAG
   on:
     tags: true
     all_branches: true
+- provider: releases
+  prerelease: true
+  skip_cleanup: true
+  file_glob: true
+  file: "./*.zip"
+  on:
+    tags: true
+    all_branches: true
+    api_key:
+      secure: DOKXkyRbTC2i9IFimK2wIGiCFnx0YvdAeAN5huwz0+S+tlFd/xfoeaxvmCq2V5z9HsuULYE6MwGtETzn3UVo2g5fdN+csOWMQzB46BD/M0pT9fajxmpbOxDmWMN2oiBce8qgnC9ktsW1WBRDzVHzrA5keAYiu/mGxo+X4sv/6TTr8tu25pcfZDwjGFEZb7+IYxbv/sXcTcOzbY6MiqFFrfwcMW9JsJJ2GxLKRwBvURZ7u5GDNwLC3GvrUPxcZ+Rs/ZDdOSMbi0PeAyGh2GDrQLCibuZWMeGJ4OKSbNDEf9bmfZj9XCcHlxWZDXVHp7N5oCgtL/2dRFlzFMq4aZd6RUrMTggF9+gdx7LawuRwAS/2oX3kaPKkMxFspj2RMQOCVyMqjc+MBTc6jV+PHmpP+M2L4PX6XXrRMqDY5H7k6yHPZmhOnARZQza8weQ9sBTn5KPDZ2ehkcRoVvOdZWaT0BQd57Qoyp05Q9fn3TGKj2nQ300v2aqctyOrGIE1F6k0nEKg3PBnmDm+U2skYaDS7Yq/dbM0bqsjG8CUivk1yj/8/3KrEge9Y2me5phPj7GspmsRwM0lsv3mZuslC1KvzInan+Fn/bl8Q/89iNpcRIDCKnviwQeXqKdy2ppJ1vWI6wVTUpFTvg3SoOctwXbXSgew14TRD6J2wON3BReP+Qk=

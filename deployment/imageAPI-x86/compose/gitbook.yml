@@ -1,0 +1,13 @@
+services:
+  gitbook:
+    environment:
+      BOOKUSER: '1000'
+    image: chineseteapot/gitbook-x86:latest
+    ports:
+    - published: 4200
+      target: 4000
+    restart: always
+    volumes:
+    - /home/qa/github/docker-example/gitbook:/book:rw
+version: '3.2'
+
