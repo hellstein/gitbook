@@ -1,10 +1,10 @@
 <p align="center">
-  <img width="250" src="LOGO">
+  <img width="250" src="https://www.gitbook.com/public/images/f5fde7c87273057f8e0f9ff934df552d.png">
 </p>
 
-<h1 align="center"> Project Title </h1>
+<h1 align="center"> Gitbook </h1>
 <p align="center">
-  <b >One Paragraph of project description goes here</b>
+  <b >Build gitbook locally with docker image</b>
 </p>
 <br>
 
@@ -17,7 +17,7 @@ armv6: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitboo
 ![GitHub](https://img.shields.io/github/license/ChineseTeapot/gitbook.svg)
 
 # Manual
-More details got to the github page.
+
 
 # Logistics
 
@@ -32,7 +32,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Authors
 
-* **AUTHOR** - *Initial work* - [AUTHOR](https://github.com/AUTHOR)
+* **AUTHOR** - *Initial work* - [brownyuan](https://github.com/brownyuan)
 
 See also the list of [contributors](https://github.com/ChineseTeapot/gitbook/graphs/contributors) who participated in this project.
 
@@ -40,8 +40,6 @@ See also the list of [contributors](https://github.com/ChineseTeapot/gitbook/gra
 
 See [Acknowledgments](https://github.com/ChineseTeapot/gitbook/blob/master/.github/ACKNOWLEDGMENTS.md)
 
-
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ChineseTeapot/gitbook/blob/master/LICENSE.md) file for details
-
