@@ -17,7 +17,7 @@ armv6: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitboo
 ![GitHub](https://img.shields.io/github/license/ChineseTeapot/gitbook.svg)
 
 # Manual
-
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/lKGuzYRATow)
 
 # Logistics
 
