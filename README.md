@@ -10,10 +10,9 @@
 
 [![GitHub release](https://img.shields.io/github/release/ChineseTeapot/gitbook.svg)](https://github.com/ChineseTeapot/gitbook/releases)
 ![Github All Releases](https://img.shields.io/github/downloads/ChineseTeapot/gitbook/total.svg)
-x86: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitbook-x86.svg)](https://hub.docker.com/r/ChineseTeapot/gitbook-x86/tags/)
-armv6: [![Docker Pulls](https://img.shields.io/docker/pulls/ChineseTeapot/gitbook-x86.svg)](https://hub.docker.com/r/ChineseTeapot/gitbook-armv6/tags/)
+x86: [![Docker Pulls](https://img.shields.io/docker/pulls/chineseteapot/gitbook-x86.svg)](https://hub.docker.com/r/chineseteapot/gitbook-x86/tags/)
 
-![Travis (.org) branch](https://img.shields.io/travis/ChineseTeapot/gitbook/BRANCH.svg)
+![Travis (.org) branch](https://img.shields.io/travis/ChineseTeapot/gitbook.svg)
 ![GitHub](https://img.shields.io/github/license/ChineseTeapot/gitbook.svg)
 
 # Manual
